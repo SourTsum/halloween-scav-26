@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341676788
+  "updated": 1793341734190
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -461,6 +461,15 @@
    "qty": 1,
    "ts": 1793341672783,
    "label": "Drunk-call five people",
+   "note": ""
+  },
+  "-mvuld30k84lca": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c53",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793341730180,
+   "label": "Do a dare given to you by a stranger",
    "note": ""
   }
  },
