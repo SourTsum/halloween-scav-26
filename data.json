@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339768733
+  "updated": 1793339784889
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -258,6 +258,15 @@
    "qty": 1,
    "ts": 1793339764724,
    "label": "Steal a traffic sign",
+   "note": ""
+  },
+  "-mvuk7axhcnojo": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c73",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793339780885,
+   "label": "Cover yourself in toilet paper like a mummy",
    "note": ""
   }
  },
