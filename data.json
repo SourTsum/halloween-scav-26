@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339383945
+  "updated": 1793339390929
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -132,6 +132,15 @@
    "qty": 1,
    "ts": 1793339379935,
    "label": "Get publicly rejected while fake-proposing to someone",
+   "note": ""
+  },
+  "-mvujyuy6zi6zv": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c51",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793339386926,
+   "label": "Have a dance battle with strangers",
    "note": ""
   }
  },
