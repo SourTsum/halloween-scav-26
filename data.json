@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344286102
+  "updated": 1793344342814
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -677,6 +677,15 @@
    "qty": 1,
    "ts": 1793344282095,
    "label": "Steal a piece of a stranger's costume",
+   "note": ""
+  },
+  "-mvumwzm92oq9h": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c56",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793344338513,
+   "label": "Fail at ding-dong ditching by staying until someone answers",
    "note": ""
   }
  },
