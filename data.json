@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346543647
+  "updated": 1793346550615
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -1001,6 +1001,15 @@
    "qty": 1,
    "ts": 1793346539004,
    "label": "Go trick-or-treating",
+   "note": ""
+  },
+  "-mvuo8be78uqze": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c75",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793346546606,
+   "label": "Do a wall sit for an entire song",
    "note": ""
   }
  },
