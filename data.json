@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793336529895
+  "updated": 1793338021750
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -34,6 +34,15 @@
    "ts": 1793336525890,
    "label": "Steal a traffic sign",
    "note": ""
+  },
+  "-mvuj5i4osd99a": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c27",
+   "points": 320,
+   "qty": 40,
+   "ts": 1793338017287,
+   "label": "Steal a door nameplate ×40",
+   "note": "Pending"
   }
  },
  "bonuses": {}
