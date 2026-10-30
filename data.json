@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793335868499
+  "updated": 1793335870574
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -13,6 +13,11 @@
    "name": "Land Acknowledgment",
    "color": "#ff7a2f",
    "created": 1793335868499
+  },
+  "-mvuhvgsfjj4ro": {
+   "name": "Clip Monsters",
+   "color": "#c9e65a",
+   "created": 1793335870574
   }
  },
  "awards": {},
