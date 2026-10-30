@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341334924
+  "updated": 1793341571418
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -443,6 +443,15 @@
    "qty": 1,
    "ts": 1793341330915,
    "label": "Cook an egg in a stranger's kitchen",
+   "note": ""
+  },
+  "-mvul9lf6cfmi6": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c3",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793341567409,
+   "label": "Chug a Cutwater",
    "note": ""
   }
  },
