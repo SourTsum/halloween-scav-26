@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346121761
+  "updated": 1793346131198
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -875,6 +875,15 @@
    "qty": 1,
    "ts": 1793346117398,
    "label": "Sing karaoke",
+   "note": ""
+  },
+  "-mvunzbrn193tp": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c2",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793346127186,
+   "label": "Do a shoey",
    "note": ""
   }
  },
