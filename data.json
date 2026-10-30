@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793338486757
+  "updated": 1793339339259
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -69,6 +69,15 @@
    "qty": 1,
    "ts": 1793338481832,
    "label": "Drink a Four Loko",
+   "note": ""
+  },
+  "-mvujxr2s5z482": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c71",
+   "points": 300,
+   "qty": 1,
+   "ts": 1793339335251,
+   "label": "Dye your hair",
    "note": ""
   }
  },
