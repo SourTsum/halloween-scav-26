@@ -1,7 +1,17 @@
 {
  "meta": {
-  "finished": false
+  "finished": false,
+  "updated": 1793320752754
  },
  "teams": {},
- "awards": {}
+ "awards": {},
+ "bonuses": {
+  "-mvu8vdkzugy0l": {
+   "name": "Do a backflip",
+   "pts": 300,
+   "created": 1793320748674,
+   "active": true,
+   "ends": 1793322548674
+  }
+ }
 }
