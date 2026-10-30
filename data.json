@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346300675
+  "updated": 1793346310394
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -902,6 +902,15 @@
    "qty": 1,
    "ts": 1793346296668,
    "label": "Get publicly rejected while fake-proposing to someone",
+   "note": ""
+  },
+  "-mvuo3617mb584": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c54",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793346306378,
+   "label": "Find someone wearing the same costume as you",
    "note": ""
   }
  },
