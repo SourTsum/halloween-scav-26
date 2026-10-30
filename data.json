@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340110367
+  "updated": 1793340507553
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -23,6 +23,11 @@
    "name": "Bugs",
    "color": "#4fe0b5",
    "created": 1793335876018
+  },
+  "-mvukmsjg2ywfw": {
+   "name": "Fashionably Late",
+   "color": "#ff5f8f",
+   "created": 1793340507553
   }
  },
  "awards": {
