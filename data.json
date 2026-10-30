@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342065442
+  "updated": 1793342067557
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -506,6 +506,15 @@
    "qty": 1,
    "ts": 1793342061439,
    "label": "Go skinny-dipping",
+   "note": ""
+  },
+  "-mvulka9uniu57": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c15",
+   "points": 600,
+   "qty": 1,
+   "ts": 1793342066177,
+   "label": "Jump into Tempe Town Lake",
    "note": ""
   }
  },
