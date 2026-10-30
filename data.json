@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339784889
+  "updated": 1793339797218
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -267,6 +267,15 @@
    "qty": 1,
    "ts": 1793339780885,
    "label": "Cover yourself in toilet paper like a mummy",
+   "note": ""
+  },
+  "-mvuk7kfuk5paj": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c44",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793339793209,
+   "label": "Work out in your costume",
    "note": ""
   }
  },
