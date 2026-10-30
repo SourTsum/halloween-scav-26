@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339448612
+  "updated": 1793339473409
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -205,6 +205,15 @@
    "ts": 1793339444605,
    "label": "Work out in your costume",
    "note": ""
+  },
+  "-mvuk0mlb9xxk8": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c9",
+   "points": 50,
+   "qty": 1,
+   "ts": 1793339469407,
+   "label": "Bring liquor to the party: per can",
+   "note": "pending"
   }
  },
  "bonuses": {}
