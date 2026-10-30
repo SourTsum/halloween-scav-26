@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344105279
+  "updated": 1793344151756
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -650,6 +650,15 @@
    "qty": 2,
    "ts": 1793344101273,
    "label": "Steal a door nameplate ×2",
+   "note": ""
+  },
+  "-mvumswecqz93g": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c49",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793344147715,
+   "label": "Get someone's Snap, Instagram, or phone number using a cheesy pickup line",
    "note": ""
   }
  },
