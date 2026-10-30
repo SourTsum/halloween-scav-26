@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339797218
+  "updated": 1793340013362
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -276,6 +276,15 @@
    "qty": 1,
    "ts": 1793339793209,
    "label": "Work out in your costume",
+   "note": ""
+  },
+  "-mvukc77s8c6co": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c37",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793340009351,
+   "label": "Take a selfie with an El P employee",
    "note": ""
   }
  },
