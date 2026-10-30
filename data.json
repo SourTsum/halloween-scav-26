@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345500043
+  "updated": 1793345570377
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -794,6 +794,15 @@
    "qty": 1,
    "ts": 1793345496032,
    "label": "Get someone to autograph your forehead",
+   "note": ""
+  },
+  "-mvunnb193jzp1": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c2",
+   "points": 150,
+   "qty": 2,
+   "ts": 1793345566364,
+   "label": "Do a shoey ×2",
    "note": ""
   }
  },
