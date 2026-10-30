@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346425759
+  "updated": 1793346497436
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -947,6 +947,24 @@
    "qty": 1,
    "ts": 1793346421357,
    "label": "Post a TikTok dance",
+   "note": ""
+  },
+  "-mvuo73bokfhfo": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c59",
+   "points": 80,
+   "qty": 1,
+   "ts": 1793346489491,
+   "label": "Box a Waymo in for 5 seconds",
+   "note": ""
+  },
+  "-mvuo76cya3ygz": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c34",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793346493425,
+   "label": "Film a dorm tour",
    "note": ""
   }
  },
