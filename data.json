@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346570088
+  "updated": 1793346742936
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -1019,6 +1019,15 @@
    "qty": 1,
    "ts": 1793346566077,
    "label": "Leave your sock at Alex's apartment",
+   "note": ""
+  },
+  "-mvuocfsf33gsa": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c63",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793346738926,
+   "label": "Lead a stranger to a party that doesn't exist",
    "note": ""
   }
  },
