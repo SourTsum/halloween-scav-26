@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339339259
+  "updated": 1793339349569
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -78,6 +78,15 @@
    "qty": 1,
    "ts": 1793339335251,
    "label": "Dye your hair",
+   "note": ""
+  },
+  "-mvujxz18wesxz": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c17",
+   "points": 250,
+   "qty": 1,
+   "ts": 1793339345564,
+   "label": "Jump into the W. P. Carey Fountain",
    "note": ""
   }
  },
