@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345761762
+  "updated": 1793345797799
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -830,6 +830,15 @@
    "qty": 1,
    "ts": 1793345757650,
    "label": "Drunk-call five people",
+   "note": ""
+  },
+  "-mvuns5qigpdc2": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c7",
+   "points": 300,
+   "qty": 1,
+   "ts": 1793345792777,
+   "label": "Have one person drink a bottle of wine on video",
    "note": ""
   }
  },
