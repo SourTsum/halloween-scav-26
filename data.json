@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344491828
+  "updated": 1793344546238
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -704,6 +704,24 @@
    "qty": 1,
    "ts": 1793344487076,
    "label": "Run a beer mile (2.5 laps around the SDFC field)",
+   "note": ""
+  },
+  "-mvun19rn2nfyg": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c61",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793344538290,
+   "label": "Kiss a random stranger",
+   "note": ""
+  },
+  "-mvun1csyuu7b6": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c1",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793344542226,
+   "label": "Pour a beer down your pants",
    "note": ""
   }
  },
