@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793343442751
+  "updated": 1793343550602
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -606,6 +606,15 @@
    "ts": 1793343438732,
    "label": "Have one person drink a bottle of wine on video",
    "note": ""
+  },
+  "-mvumg0fq4gzxz": {
+   "teamId": "-mvuhvl1hepfdi",
+   "cid": null,
+   "points": -10000,
+   "qty": 1,
+   "ts": 1793343546422,
+   "label": "Stealing Liquor",
+   "note": "Custom"
   }
  },
  "bonuses": {}
