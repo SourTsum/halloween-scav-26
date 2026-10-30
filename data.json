@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341139749
+  "updated": 1793341321389
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -416,6 +416,15 @@
    "qty": 1,
    "ts": 1793341134778,
    "label": "Throw up",
+   "note": ""
+  },
+  "-mvul48hyyxue8": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c7",
+   "points": 300,
+   "qty": 1,
+   "ts": 1793341317381,
+   "label": "Have one person drink a bottle of wine on video",
    "note": ""
   }
  },
