@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793343382756
+  "updated": 1793343442751
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -596,6 +596,15 @@
    "qty": 1,
    "ts": 1793343378671,
    "label": "Fail at ding-dong ditching by staying until someone answers",
+   "note": ""
+  },
+  "-mvumdpccal9ko": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c7",
+   "points": 300,
+   "qty": 1,
+   "ts": 1793343438732,
+   "label": "Have one person drink a bottle of wine on video",
    "note": ""
   }
  },
