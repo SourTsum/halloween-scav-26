@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346497436
+  "updated": 1793346515161
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -965,6 +965,24 @@
    "qty": 1,
    "ts": 1793346493425,
    "label": "Film a dorm tour",
+   "note": ""
+  },
+  "-mvuo7h4krmu9y": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c63",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793346507379,
+   "label": "Lead a stranger to a party that doesn't exist",
+   "note": ""
+  },
+  "-mvuo7k1a0pkuq": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c76",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793346511150,
+   "label": "Leave your sock at Alex's apartment",
    "note": ""
   }
  },
