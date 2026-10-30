@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342259761
+  "updated": 1793342392017
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -533,6 +533,15 @@
    "qty": 1,
    "ts": 1793342255544,
    "label": "Work out in your costume",
+   "note": ""
+  },
+  "-mvulr6lm48rtk": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c18",
+   "points": 250,
+   "qty": 1,
+   "ts": 1793342388010,
+   "label": "Jump into the Barrett Fountain",
    "note": ""
   }
  },
