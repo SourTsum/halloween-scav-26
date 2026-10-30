@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346742936
+  "updated": 1793346772506
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -1028,6 +1028,15 @@
    "qty": 1,
    "ts": 1793346738926,
    "label": "Lead a stranger to a party that doesn't exist",
+   "note": ""
+  },
+  "-mvuod2lpvkqdd": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c74",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793346768492,
+   "label": "Make a poster and hang it up somewhere",
    "note": ""
   }
  },
