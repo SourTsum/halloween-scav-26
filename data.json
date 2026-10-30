@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339356024
+  "updated": 1793339365448
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -96,6 +96,24 @@
    "qty": 1,
    "ts": 1793339352012,
    "label": "Jump into the Barrett Fountain",
+   "note": ""
+  },
+  "-mvujy9vwcd73p": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c57",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793339359627,
+   "label": "Swap costumes",
+   "note": ""
+  },
+  "-mvujyba6rnhib": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c58",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793339361438,
+   "label": "Bonus: Swap costumes with a stranger",
    "note": ""
   }
  },
