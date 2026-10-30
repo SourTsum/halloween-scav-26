@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345570377
+  "updated": 1793345587763
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -804,6 +804,15 @@
    "ts": 1793345566364,
    "label": "Do a shoey ×2",
    "note": ""
+  },
+  "-mvunnnyt5qb5w": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": null,
+   "points": 1,
+   "qty": 1,
+   "ts": 1793345583125,
+   "label": "mb",
+   "note": "Custom"
   }
  },
  "bonuses": {}
