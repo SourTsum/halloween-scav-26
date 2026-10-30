@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340532100
+  "updated": 1793340643462
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -317,6 +317,15 @@
    "qty": 1,
    "ts": 1793340106360,
    "label": "Find an object or alcoholic drink starting with the first letter of each group member's name",
+   "note": ""
+  },
+  "-mvukppepvnzd9": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c8",
+   "points": 50,
+   "qty": 1,
+   "ts": 1793340639456,
+   "label": "Throw up",
    "note": ""
   }
  },
