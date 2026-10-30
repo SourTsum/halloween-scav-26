@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344845202
+  "updated": 1793344860761
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -750,6 +750,15 @@
    "ts": 1793344841195,
    "label": "bro",
    "note": "Custom"
+  },
+  "-mvun8374z977i": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c29",
+   "points": 250,
+   "qty": 1,
+   "ts": 1793344856368,
+   "label": "TP the house of someone who's present",
+   "note": ""
   }
  },
  "bonuses": {}
