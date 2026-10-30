@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346550615
+  "updated": 1793346570088
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -1010,6 +1010,15 @@
    "qty": 1,
    "ts": 1793346546606,
    "label": "Do a wall sit for an entire song",
+   "note": ""
+  },
+  "-mvuo8qf17n6af": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c76",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793346566077,
+   "label": "Leave your sock at Alex's apartment",
    "note": ""
   }
  },
