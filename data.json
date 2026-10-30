@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339398127
+  "updated": 1793339404935
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -150,6 +150,15 @@
    "qty": 1,
    "ts": 1793339394123,
    "label": "Find someone wearing the same costume as you",
+   "note": ""
+  },
+  "-mvujz5r54trny": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c62",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793339400929,
+   "label": "Sing a love song to a stranger",
    "note": ""
   }
  },
