@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340643462
+  "updated": 1793340654757
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -326,6 +326,15 @@
    "qty": 1,
    "ts": 1793340639456,
    "label": "Throw up",
+   "note": ""
+  },
+  "-mvukpxza61u0s": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c67",
+   "points": 250,
+   "qty": 1,
+   "ts": 1793340650565,
+   "label": "Get someone to come to the party after it's already started",
    "note": ""
   }
  },
