@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345930759
+  "updated": 1793346121761
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -866,6 +866,15 @@
    "qty": 1,
    "ts": 1793345925946,
    "label": "Post a TikTok dance",
+   "note": ""
+  },
+  "-mvunz47qj7a9v": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c68",
+   "points": 50,
+   "qty": 1,
+   "ts": 1793346117398,
+   "label": "Sing karaoke",
    "note": ""
   }
  },
