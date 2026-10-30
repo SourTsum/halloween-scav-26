@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793343550602
+  "updated": 1793343624761
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -615,6 +615,15 @@
    "ts": 1793343546422,
    "label": "Stealing Liquor",
    "note": "Custom"
+  },
+  "-mvumhlbas5dme": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c12",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793343620133,
+   "label": "Split a joint or some form of weed with your team",
+   "note": ""
   }
  },
  "bonuses": {}
