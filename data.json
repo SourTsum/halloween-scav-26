@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344658907
+  "updated": 1793344845202
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -740,6 +740,15 @@
    "qty": 1,
    "ts": 1793344654900,
    "label": "lol",
+   "note": "Custom"
+  },
+  "-mvun7rhnhoj91": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": null,
+   "points": -100000,
+   "qty": 1,
+   "ts": 1793344841195,
+   "label": "bro",
    "note": "Custom"
   }
  },
