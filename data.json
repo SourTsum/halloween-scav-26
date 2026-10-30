@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346412798
+  "updated": 1793346425759
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -939,6 +939,15 @@
    "ts": 1793346408784,
    "label": "can",
    "note": "Custom"
+  },
+  "-mvuo5mr1iyw5u": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c70",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793346421357,
+   "label": "Post a TikTok dance",
+   "note": ""
   }
  },
  "bonuses": {}
