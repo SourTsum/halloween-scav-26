@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793335870574
+  "updated": 1793335876018
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -18,6 +18,11 @@
    "name": "Clip Monsters",
    "color": "#c9e65a",
    "created": 1793335870574
+  },
+  "-mvuhvl1hepfdi": {
+   "name": "Bugs",
+   "color": "#4fe0b5",
+   "created": 1793335876018
   }
  },
  "awards": {},
