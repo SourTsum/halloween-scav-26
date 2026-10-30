@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340822532
+  "updated": 1793340896056
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -362,6 +362,15 @@
    "qty": 1,
    "ts": 1793340818521,
    "label": "Pour a beer down your pants",
+   "note": ""
+  },
+  "-mvukv4b6d3gjg": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c34",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793340892049,
+   "label": "Film a dorm tour",
    "note": ""
   }
  },
