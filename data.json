@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340930585
+  "updated": 1793341005677
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -389,6 +389,15 @@
    "qty": 1,
    "ts": 1793340926578,
    "label": "Get a random person to slow dance with you",
+   "note": ""
+  },
+  "-mvukxgw5v4rmg": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c74",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793341001668,
+   "label": "Make a poster and hang it up somewhere",
    "note": ""
   }
  },
