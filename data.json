@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346515161
+  "updated": 1793346525144
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -983,6 +983,15 @@
    "qty": 1,
    "ts": 1793346511150,
    "label": "Leave your sock at Alex's apartment",
+   "note": ""
+  },
+  "-mvuo7rqhdz6s3": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c49",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793346521128,
+   "label": "Get someone's Snap, Instagram, or phone number using a cheesy pickup line",
    "note": ""
   }
  },
