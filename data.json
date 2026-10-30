@@ -1,9 +1,15 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793320786758
+  "updated": 1793335848058
  },
- "teams": {},
+ "teams": {
+  "-mvuhux8vbg93v": {
+   "name": "Stranger Things",
+   "color": "#b78cff",
+   "created": 1793335848058
+  }
+ },
  "awards": {},
  "bonuses": {}
 }
