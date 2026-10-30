@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341005677
+  "updated": 1793341025783
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -398,6 +398,15 @@
    "qty": 1,
    "ts": 1793341001668,
    "label": "Make a poster and hang it up somewhere",
+   "note": ""
+  },
+  "-mvukxwepkd4uw": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c75",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793341021777,
+   "label": "Do a wall sit for an entire song",
    "note": ""
   }
  },
