@@ -67,6 +67,19 @@ in `js/config.js`.
   (bridge +35/person, dryer rocks +5/machine, liquor 50/can or 200/bottle,
   nameplates 8 each, sober −100/member, saying Alex's name −25 each).
   Use **Custom points** to override any value.
+- **Custom award:** type what it's for and the points, and it goes to the selected team.
+  Use a negative number for a deduction.
+- **Fire sale:** type a bonus challenge, its points, and how long it lasts, then tap
+  **Post fire sale**. It appears in a highlighted banner at the top of the public board
+  and at the top of your challenge list (under *Fire sales*), so you can award it like
+  any other challenge. It drops off the board when time runs out, or when you tap **End**.
+  - **Text it** opens your phone's share sheet with the announcement written for you.
+    Pick your group chat and send. If the share sheet isn't available, it opens Messages
+    instead. **Copy message** copies the text so you can paste it anywhere.
+  - Anyone with the board open sees the banner, and their tab title changes. If they
+    tapped **Alert me**, they also get a browser notification (Android and desktop; on
+    iPhone only when the board is added to the home screen).
+  - A static site can't send texts by itself, which is why the text goes through your phone.
 - **Publish now** commits immediately instead of waiting for the short pause.
 - **Undo:** use the **×** next to an entry in *Recent awards*.
 - **End hunt & crown winner:** shows a champion banner on the board after the next deploy.

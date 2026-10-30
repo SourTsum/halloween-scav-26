@@ -43,10 +43,13 @@ function normalize(v) {
   const awards = Object.entries(v.awards || {})
     .map(([id, a]) => ({ id, ...a }))
     .sort((a, b) => (b.ts || 0) - (a.ts || 0));
+  const bonuses = Object.entries(v.bonuses || {})
+    .map(([id, b]) => ({ id, ...b }))
+    .sort((a, b) => (b.created || 0) - (a.created || 0));
   return {
     finished: !!(v.meta && v.meta.finished),
     updated: (v.meta && v.meta.updated) || null,
-    teams, awards,
+    teams, awards, bonuses,
   };
 }
 
@@ -237,7 +240,10 @@ function githubStore(isHost) {
     addAward: (a) => { const k = uid(); return mutate((v) => { (v.awards ||= {})[k] = a; }); },
     removeAward: (aid) => mutate((v) => { if (v.awards) delete v.awards[aid]; }),
     setFinished: (f) => mutate((v) => { (v.meta ||= {}).finished = !!f; }),
-    reset: () => mutate((v) => { v.teams = {}; v.awards = {}; v.meta = { finished: false }; }),
+    addBonus: (b) => { const k = uid(); return mutate((v) => { (v.bonuses ||= {})[k] = b; }).then(() => k); },
+    endBonus: (bid) => mutate((v) => { if (v.bonuses && v.bonuses[bid]) v.bonuses[bid].active = false; }),
+    deleteBonus: (bid) => mutate((v) => { if (v.bonuses) delete v.bonuses[bid]; }),
+    reset: () => mutate((v) => { v.teams = {}; v.awards = {}; v.bonuses = {}; v.meta = { finished: false }; }),
   };
 }
 
@@ -283,6 +289,9 @@ async function firebaseStore() {
     addAward: (a) => set(push(path("awards")), a),
     removeAward: (id) => remove(path(`awards/${id}`)),
     setFinished: (v) => update(path("meta"), { finished: !!v }),
+    async addBonus(b) { const r = push(path("bonuses")); await set(r, b); return r.key; },
+    endBonus: (bid) => update(path(`bonuses/${bid}`), { active: false }),
+    deleteBonus: (bid) => remove(path(`bonuses/${bid}`)),
     reset: () => set(path(), { meta: { finished: false } }),
   };
 }
@@ -325,7 +334,10 @@ function demoStore() {
     addAward: (a) => mut((v) => { (v.awards ||= {})[id()] = a; }),
     removeAward: (aid) => mut((v) => { if (v.awards) delete v.awards[aid]; }),
     setFinished: (f) => mut((v) => { (v.meta ||= {}).finished = !!f; }),
-    reset: () => mut((v) => { v.teams = {}; v.awards = {}; v.meta = { finished: false }; }),
+    async addBonus(b) { const k = id(); await mut((v) => { (v.bonuses ||= {})[k] = b; }); return k; },
+    endBonus: (bid) => mut((v) => { if (v.bonuses && v.bonuses[bid]) v.bonuses[bid].active = false; }),
+    deleteBonus: (bid) => mut((v) => { if (v.bonuses) delete v.bonuses[bid]; }),
+    reset: () => mut((v) => { v.teams = {}; v.awards = {}; v.bonuses = {}; v.meta = { finished: false }; }),
   };
 }
 
@@ -339,6 +351,19 @@ export function standings(state) {
   });
   return rows.sort((a, b) => b.pts - a.pts || a.t.name.localeCompare(b.t.name));
 }
+
+// A bonus is open while it's active and its deadline (if any) hasn't passed.
+export const bonusOpen = (b, now = Date.now()) => b.active !== false && (!b.ends || b.ends > now);
+
+export function untilText(ts, now = Date.now()) {
+  const m = Math.ceil((ts - now) / 60000);
+  if (m <= 0) return "ended";
+  if (m < 60) return `${m} min left`;
+  return `${Math.floor(m / 60)}h ${m % 60}m left`;
+}
+
+export const clockText = (ts) =>
+  new Date(ts).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
 
 export const esc = (s) =>
   String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

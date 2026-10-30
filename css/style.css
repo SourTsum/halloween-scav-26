@@ -145,3 +145,23 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 footer.foot{margin-top:40px;font-size:14px;color:var(--muted)}
 footer.foot a{color:var(--muted)}
 .loading{margin-top:40px;color:var(--muted);font-family:var(--label);letter-spacing:.12em;text-transform:uppercase}
+
+/* Fire sales */
+.firesale{margin-top:20px;border:1px solid var(--pumpkin);border-radius:16px;padding:16px 18px;
+  background:linear-gradient(120deg,rgba(255,122,47,.22),rgba(243,185,59,.08) 60%,transparent),var(--panel);
+  display:flex;flex-direction:column;gap:12px}
+.fs-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.fs-tag{font-family:var(--display);font-size:22px;color:var(--pumpkin);line-height:1;animation:flicker 2.4s ease-in-out infinite}
+.fs-sub{font-family:var(--label);text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;color:var(--muted)}
+.fs-head .btn{margin-left:auto}
+.fs-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;align-items:baseline;border-top:1px solid color-mix(in srgb,var(--pumpkin) 35%,var(--line));padding-top:10px}
+.fs-name{font-family:var(--label);font-weight:700;font-size:clamp(20px,3vw,26px);line-height:1.15;overflow-wrap:anywhere}
+.fs-pts{font-family:var(--display);font-size:clamp(22px,3.4vw,30px);color:var(--gold);font-variant-numeric:tabular-nums}
+.fs-when{grid-column:1 / -1;font-size:14px;color:var(--muted)}
+@keyframes flicker{0%,100%{opacity:1}45%{opacity:.82}50%{opacity:1}55%{opacity:.9}}
+.card.fire{border-color:color-mix(in srgb,var(--pumpkin) 55%,var(--line))}
+.card.fire h3{color:var(--pumpkin)}
+.hot{font-family:var(--label);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--gold-ink);background:var(--pumpkin);border-radius:5px;padding:1px 6px;margin-right:4px}
+.sharebox{margin-top:14px;border:1px dashed var(--pumpkin);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.sharebox .msg{margin:0;font-size:15px;user-select:all;overflow-wrap:anywhere}
+select.field{appearance:auto}

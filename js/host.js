@@ -1,12 +1,12 @@
 // Host desk (host.html). Sign in, manage teams, award challenges.
-import { getStore, standings, esc, fmt, sgn, ago, repoLabel } from "./store.js";
+import { getStore, standings, esc, fmt, sgn, ago, repoLabel, bonusOpen, untilText, clockText } from "./store.js";
 import { CHALLENGES, BY_ID, CATEGORIES, TEAM_COLORS } from "./challenges.js";
 import { HUNT_TITLE } from "./config.js";
 
 const app = document.getElementById("app");
 let store = null;
 let user = null;
-let state = { finished: false, teams: [], awards: [] };
+let state = { finished: false, teams: [], awards: [], bonuses: [] };
 let online = true;
 let save = { state: "saved" };
 let mode = "demo";
@@ -17,7 +17,21 @@ const ui = {
   teamId: sessionStorage.getItem("hunt-team") || null,
   cat: "all", q: "", cid: null, qty: 1, override: "", note: "",
   newColor: TEAM_COLORS[0], confirmReset: false, busy: false,
+  justPosted: null, // bonus id whose "text it" panel is open
 };
+
+// Fire sales show up in the picker as challenges with id "b:<bonusId>".
+const bonusAsChallenge = (b) => ({ id: "b:" + b.id, cat: "bonus", name: "Fire sale: " + b.name, pts: b.pts, unit: null, ends: b.ends });
+const openBonuses = () => (state.bonuses || []).filter((b) => bonusOpen(b));
+const chal = (id) => BY_ID[id] || (id && id.startsWith("b:")
+  ? (() => { const b = (state.bonuses || []).find((x) => "b:" + x.id === id); return b ? bonusAsChallenge(b) : null; })()
+  : null);
+const boardUrl = () => new URL("index.html", location.href).href;
+
+function bonusText(b) {
+  const when = b.ends ? ` Ends at ${clockText(b.ends)}.` : "";
+  return `\u{1F525} FIRE SALE: ${b.name} for ${b.pts} points!${when} Live board: ${boardUrl()}`;
+}
 
 const $ = (id) => document.getElementById(id);
 const team = (id) => state.teams.find((t) => t.id === id) || null;
@@ -59,6 +73,14 @@ function renderShell() {
         <div class="clist" id="clist" style="margin-top:10px"></div>
         <div id="awardbar"></div>
       </section>
+      <section class="card"><h3>Custom award</h3>
+        <form id="custom" class="award" style="margin:0;border:0;padding:0">
+          <label class="lab" for="cname" style="flex:1 1 220px">What for<input class="field" id="cname" placeholder="e.g. Best costume" maxlength="80" autocomplete="off" style="width:100%"></label>
+          <label class="lab" for="cpts">Points<input class="field" id="cpts" inputmode="numeric" placeholder="100" autocomplete="off"></label>
+          <button class="btn" type="submit" id="custombtn">Award</button>
+        </form>
+        <p class="rules" style="margin:10px 0 0">Goes to the team selected above. Use a minus sign for a deduction.</p>
+      </section>
       <section class="card"><h3>Recent awards</h3><div id="log"></div></section>
     </div>
     <div class="stack">
@@ -69,6 +91,20 @@ function renderShell() {
           <div class="swatches" id="swatches"></div>
           <button class="btn" type="submit">Add team</button>
         </form>
+      </section>
+      <section class="card fire"><h3>Fire sale</h3>
+        <form id="firesale" class="stack" style="gap:10px">
+          <input class="field" id="fname" placeholder="Challenge, e.g. Selfie with a cop on a scooter" maxlength="100" autocomplete="off">
+          <div class="row2">
+            <label class="lab" for="fpts">Points<input class="field" id="fpts" inputmode="numeric" placeholder="300" autocomplete="off"></label>
+            <label class="lab" for="fmins">Lasts<select class="field" id="fmins" style="width:140px">
+              <option value="">Until I end it</option><option value="10">10 min</option><option value="15">15 min</option>
+              <option value="20">20 min</option><option value="30" selected>30 min</option><option value="45">45 min</option><option value="60">1 hour</option>
+            </select></label>
+          </div>
+          <button class="btn" type="submit">Post fire sale</button>
+        </form>
+        <div id="bonuses"></div>
       </section>
       <section class="card"><h3>Hunt</h3><div id="huntctl"></div></section>
       <div class="who-bar">Signed in as ${esc(user.email)}${mode !== "demo" ? ` · <button class="btn ghost sm" data-act="signout">Sign out</button>` : ""}</div>
@@ -110,12 +146,17 @@ function updateAll() {
         `<button class="pill" data-act="team" data-id="${t.id}" aria-pressed="${t.id === ui.teamId}" style="--team:${esc(t.color)}"><i></i>${esc(t.name)}</button>`).join("") + `</div>`
     : `<div class="empty" style="padding:16px">Add a team first (Teams panel).</div>`);
 
-  setRegion("chips", CATEGORIES.map(([k, l]) =>
+  const cats = openBonuses().length ? [["all", "All"], ["bonus", "Fire sales"], ...CATEGORIES.slice(1)] : CATEGORIES;
+  if (ui.cat === "bonus" && !openBonuses().length) ui.cat = "all";
+  setRegion("chips", cats.map(([k, l]) =>
     `<button class="chip" data-act="cat" data-id="${k}" aria-pressed="${ui.cat === k}">${l}</button>`).join(""));
 
   updatePicker();
   updateLog();
   updateTeams();
+  updateBonuses();
+  const cb = $("custombtn"); const ct = team(ui.teamId);
+  if (cb) { cb.textContent = ct ? `Award to ${ct.name}` : "Add a team first"; cb.disabled = !ct; }
   setRegion("swatches", TEAM_COLORS.map((c) =>
     `<button type="button" class="sw" data-act="color" data-id="${c}" aria-pressed="${ui.newColor === c}" style="--team:${c}" aria-label="Team color ${c}"></button>`).join(""));
   setRegion("huntctl", `<div class="row2">${state.finished
@@ -135,25 +176,26 @@ function doneMap() {
 
 function updatePicker() {
   const q = ui.q.trim().toLowerCase();
-  const list = CHALLENGES.filter((c) => (ui.cat === "all" || c.cat === ui.cat) && (!q || c.name.toLowerCase().includes(q)));
+  const all = [...openBonuses().map(bonusAsChallenge), ...CHALLENGES];
+  const list = all.filter((c) => (ui.cat === "all" || c.cat === ui.cat) && (!q || c.name.toLowerCase().includes(q)));
   const dm = doneMap();
   setRegion("clist", list.length ? list.map((c) =>
     `<button class="citem" data-act="pick" data-id="${c.id}" aria-pressed="${ui.cid === c.id}">
-      <span class="n">${esc(c.name)}${dm[c.id] ? `<span class="done">✓ ${dm[c.id] > 1 ? dm[c.id] + "×" : "done"}</span>` : ""}${c.unit ? `<span class="u">${fmt(c.pts)} per ${c.unit}</span>` : ""}</span>
+      <span class="n">${c.cat === "bonus" ? `<span class="hot">Fire sale</span> ` : ""}${esc(c.cat === "bonus" ? c.name.replace(/^Fire sale: /, "") : c.name)}${dm[c.id] ? `<span class="done">✓ ${dm[c.id] > 1 ? dm[c.id] + "×" : "done"}</span>` : ""}${c.unit ? `<span class="u">${fmt(c.pts)} per ${c.unit}</span>` : ""}${c.ends ? `<span class="u">${untilText(c.ends)}</span>` : ""}</span>
       <span class="v${c.pts < 0 ? " neg" : ""}">${sgn(c.pts)}</span></button>`).join("")
     : `<div class="empty" style="border:0">No challenge matches “${esc(ui.q)}”.</div>`);
   updateAwardBar();
 }
 
 function awardPts() {
-  const c = BY_ID[ui.cid];
+  const c = chal(ui.cid);
   if (!c) return 0;
   if (ui.override !== "" && ui.override !== "-" && !isNaN(Number(ui.override))) return Math.round(Number(ui.override));
   return c.pts * ui.qty;
 }
 
 function updateAwardBar() {
-  const c = BY_ID[ui.cid], t = team(ui.teamId);
+  const c = chal(ui.cid), t = team(ui.teamId);
   if (!c) { setRegion("awardbar", `<div class="award"><div class="sel"><em>Pick a challenge above to award it.</em></div></div>`); return; }
   setRegion("awardbar", `<div class="award">
     <div class="sel">${esc(c.name)} <em>→ ${esc(t ? t.name : "no team selected")}</em></div>
@@ -184,6 +226,47 @@ function updateTeams() {
       <input class="field" data-act="rename" data-id="${t.id}" id="tn-${t.id}" value="${esc(t.name)}" aria-label="Team name">
       <span class="pp">${fmt(pts[t.id] || 0)}</span>
       <button class="x" data-act="deltm" data-id="${t.id}" aria-label="Delete ${esc(t.name)}">×</button></div>`).join(""), true);
+}
+
+function updateBonuses() {
+  const list = state.bonuses || [];
+  const posted = list.find((b) => b.id === ui.justPosted && bonusOpen(b));
+  let h = "";
+  if (posted) {
+    h += `<div class="sharebox"><p class="eyebrow" style="margin:0">Send it to the group chat</p>
+      <p class="msg">${esc(bonusText(posted))}</p>
+      <div class="row2"><button class="btn sm" data-act="textbonus" data-id="${posted.id}">Text it</button>
+      <button class="btn ghost sm" data-act="copybonus" data-id="${posted.id}">Copy message</button>
+      <button class="btn ghost sm" data-act="closetext">Done</button></div></div>`;
+  }
+  if (list.length) {
+    h += `<ul class="log" style="margin-top:12px">` + list.map((b) => {
+      const open = bonusOpen(b);
+      return `<li style="--team:${open ? "var(--pumpkin)" : "var(--line)"}"><span class="dot"></span>
+        <div style="min-width:0">${esc(b.name)}<br><small>${fmt(b.pts)} pts · ${open ? (b.ends ? untilText(b.ends) : "open") : "ended"}</small></div>
+        ${open ? `<button class="btn ghost sm" data-act="textbonus" data-id="${b.id}">Text</button><button class="btn ghost sm" data-act="endbonus" data-id="${b.id}">End</button>`
+               : `<span></span><button class="x" data-act="delbonus" data-id="${b.id}" aria-label="Remove fire sale">×</button>`}</li>`;
+    }).join("") + `</ul>`;
+  }
+  setRegion("bonuses", h);
+}
+
+// Hand the announcement to the phone: the share sheet lists recent group chats;
+// otherwise open Messages with the text filled in.
+async function textBonus(b) {
+  const text = bonusText(b);
+  if (navigator.share) {
+    try { await navigator.share({ text }); return; }
+    catch (e) { if (e && e.name === "AbortError") return; }
+  }
+  const sep = /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent) ? "&" : "?";
+  location.href = `sms:${sep}body=${encodeURIComponent(text)}`;
+  copyText(text, true);
+}
+
+async function copyText(text, quiet) {
+  try { await navigator.clipboard.writeText(text); if (!quiet) toast("Message copied. Paste it in the group chat."); }
+  catch { if (!quiet) toast("Couldn’t copy. Select the message text and copy it."); }
 }
 
 /* ---------- Actions ---------- */
@@ -221,7 +304,7 @@ document.addEventListener("click", (ev) => {
     case "dec": ui.qty = Math.max(1, ui.qty - 1); updateAwardBar(); break;
     case "color": ui.newColor = id; updateAll(); break;
     case "award": {
-      const c = BY_ID[ui.cid], t = team(ui.teamId);
+      const c = chal(ui.cid), t = team(ui.teamId);
       if (!c || !t || ui.busy) return;
       const points = awardPts();
       const award = {
@@ -248,6 +331,11 @@ document.addEventListener("click", (ev) => {
     case "reset": ui.confirmReset = false; run(() => store.reset(), "Everything reset"); break;
     case "signout": store.signOut(); break;
     case "publish": store.publishNow && store.publishNow(); break;
+    case "textbonus": { const b = state.bonuses.find((x) => x.id === id); if (b) textBonus(b); break; }
+    case "copybonus": { const b = state.bonuses.find((x) => x.id === id); if (b) copyText(bonusText(b)); break; }
+    case "endbonus": run(() => store.endBonus(id), "Fire sale ended"); break;
+    case "delbonus": run(() => store.deleteBonus(id), "Fire sale removed"); break;
+    case "closetext": ui.justPosted = null; updateBonuses(); break;
   }
 });
 
@@ -279,6 +367,24 @@ document.addEventListener("submit", async (ev) => {
     } catch (e) {
       err.textContent = mode === "github" ? (e.message || "Sign-in failed.") : "Sign-in failed. Check the email and password.";
     }
+  } else if (ev.target.id === "custom") {
+    const t = team(ui.teamId), name = $("cname").value.trim(), pts = Math.round(Number($("cpts").value));
+    if (!t) return toast("Add a team first.");
+    if (!name) return toast("Say what the points are for.");
+    if (!$("cpts").value.trim() || !Number.isFinite(pts) || pts === 0) return toast("Enter a points value, like 100 or -50.");
+    $("cname").value = ""; $("cpts").value = "";
+    run(() => store.addAward({ teamId: t.id, cid: null, points: pts, qty: 1, ts: Date.now(), label: name, note: "Custom" }), `${sgn(pts)} to ${t.name}`);
+  } else if (ev.target.id === "firesale") {
+    const name = $("fname").value.trim(), pts = Math.round(Number($("fpts").value)), mins = Number($("fmins").value);
+    if (!name) return toast("Describe the fire sale challenge.");
+    if (!$("fpts").value.trim() || !Number.isFinite(pts) || pts <= 0) return toast("Enter how many points it’s worth.");
+    const b = { name, pts, created: Date.now(), active: true, ends: mins ? Date.now() + mins * 60000 : null };
+    $("fname").value = ""; $("fpts").value = "";
+    try {
+      const key = await store.addBonus(b);
+      ui.justPosted = key; ui.cat = "bonus"; updateAll();
+      toast("Fire sale posted");
+    } catch (e) { run(() => Promise.reject(e)); }
   } else if (ev.target.id === "addteam") {
     const input = $("newteam"), name = input.value.trim();
     if (!name) return;
@@ -294,6 +400,8 @@ document.addEventListener("submit", async (ev) => {
 
 setInterval(() => {
   document.querySelectorAll("[data-ts]").forEach((n) => (n.textContent = ago(Number(n.dataset.ts))));
+  const typing = document.activeElement && /INPUT|SELECT/.test(document.activeElement.tagName);
+  if (shellReady && !typing) { updateBonuses(); updatePicker(); }
 }, 30000);
 
 /* ---------- Boot ---------- */

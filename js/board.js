@@ -1,5 +1,5 @@
 // Public leaderboard (index.html). Read-only, updates live.
-import { getStore, mode, standings, esc, fmt, sgn, ago } from "./store.js";
+import { getStore, mode, standings, esc, fmt, sgn, ago, bonusOpen, untilText, clockText } from "./store.js";
 import { CHALLENGES } from "./challenges.js";
 import { HUNT_TITLE, POLL_SECONDS } from "./config.js";
 
@@ -7,6 +7,8 @@ const app = document.getElementById("app");
 let state = null;
 let online = true;
 let error = null;
+let seenBonuses = null; // ids already announced on this device
+const canNotify = "Notification" in window;
 
 const penalties = CHALLENGES.filter((c) => c.cat === "penalty");
 
@@ -28,6 +30,16 @@ function render() {
   }
   if (error) h += `<div class="banner">Can’t read scores right now: ${esc(error)}</div>`;
 
+  const hot = (state.bonuses || []).filter((b) => bonusOpen(b));
+  if (hot.length) {
+    h += `<section class="firesale" aria-label="Fire sales"><div class="fs-head"><span class="fs-tag">Fire sale</span>
+      <span class="fs-sub">Limited-time bonus${hot.length > 1 ? "es" : ""}</span>
+      ${canNotify && Notification.permission === "default" ? `<button class="btn sm" id="notify">Alert me</button>` : ""}</div>` +
+      hot.map((b) => `<div class="fs-item"><div class="fs-name">${esc(b.name)}</div>
+        <div class="fs-pts">+${fmt(b.pts)}</div>
+        <div class="fs-when">${b.ends ? `Ends ${clockText(b.ends)} · <span data-until="${b.ends}">${untilText(b.ends)}</span>` : "Open now"}</div></div>`).join("") +
+      `</section>`;
+  }
   h += `<div class="board"><section style="min-width:0">`;
   if (state.finished && st.length) {
     h += `<div class="champ"><div class="crown">Hunt champions</div><h2>${esc(st[0].t.name)}</h2><div class="pts">${fmt(st[0].pts)}</div></div>`;
@@ -66,12 +78,38 @@ function render() {
 
 setInterval(() => {
   document.querySelectorAll("[data-ts]").forEach((n) => (n.textContent = ago(Number(n.dataset.ts))));
-}, 30000);
+  // Re-render when a fire sale's deadline passes so it drops off the board.
+  const expired = (state && state.bonuses || []).some((b) => b.active !== false && b.ends && b.ends <= Date.now() && document.querySelector(`[data-until="${b.ends}"]`));
+  if (expired) render();
+  else document.querySelectorAll("[data-until]").forEach((n) => (n.textContent = untilText(Number(n.dataset.until))));
+}, 15000);
+
+// Announce new fire sales to people who have the board open.
+function announce(s) {
+  const open = (s.bonuses || []).filter((b) => bonusOpen(b));
+  if (seenBonuses === null) { seenBonuses = new Set(open.map((b) => b.id)); return; } // first load: no alert
+  const fresh = open.filter((b) => !seenBonuses.has(b.id));
+  fresh.forEach((b) => seenBonuses.add(b.id));
+  if (!fresh.length) return;
+  const b = fresh[0];
+  try { navigator.vibrate && navigator.vibrate([200, 100, 200]); } catch {}
+  if (canNotify && Notification.permission === "granted") {
+    try { new Notification("Fire sale: " + b.name, { body: `+${b.pts} points${b.ends ? ` until ${clockText(b.ends)}` : ""}`, tag: "bonus-" + b.id }); } catch {}
+  }
+  document.title = "\u{1F525} Fire sale! · Halloween Hunt";
+  setTimeout(() => (document.title = "Halloween Hunt Scoreboard"), 15000);
+}
+
+document.addEventListener("click", async (ev) => {
+  if (ev.target.id !== "notify") return;
+  try { await Notification.requestPermission(); } catch {}
+  render();
+});
 
 getStore().then((store) => {
   store.onConnection((c) => { online = c; render(); });
   store.subscribe(
-    (s) => { state = s; error = null; render(); },
+    (s) => { state = s; error = null; announce(s); render(); },
     (e) => { error = e && e.message ? e.message : "permission denied"; state = state || { finished: false, teams: [], awards: [] }; render(); },
   );
 }).catch((e) => {
