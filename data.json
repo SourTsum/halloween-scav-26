@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342566747
+  "updated": 1793342627751
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -551,6 +551,15 @@
    "qty": 1,
    "ts": 1793342561916,
    "label": "Get someone's Snap, Instagram, or phone number using a cheesy pickup line",
+   "note": ""
+  },
+  "-mvulw8834mt2q": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c48",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793342623395,
+   "label": "Get someone to autograph your forehead",
    "note": ""
   }
  },
