@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342392017
+  "updated": 1793342566747
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -542,6 +542,15 @@
    "qty": 1,
    "ts": 1793342388010,
    "label": "Jump into the Barrett Fountain",
+   "note": ""
+  },
+  "-mvuluwsdh7mya": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c49",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793342561916,
+   "label": "Get someone's Snap, Instagram, or phone number using a cheesy pickup line",
    "note": ""
   }
  },
