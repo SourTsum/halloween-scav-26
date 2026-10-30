@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339473409
+  "updated": 1793339482192
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -214,6 +214,15 @@
    "ts": 1793339469407,
    "label": "Bring liquor to the party: per can",
    "note": "pending"
+  },
+  "-mvuk0td512yu2": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c46",
+   "points": 25,
+   "qty": 1,
+   "ts": 1793339478185,
+   "label": "Take a selfie with a random stranger",
+   "note": ""
   }
  },
  "bonuses": {}
