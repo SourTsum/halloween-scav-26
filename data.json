@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345130760
+  "updated": 1793345446363
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -767,6 +767,15 @@
    "qty": 3,
    "ts": 1793345125904,
    "label": "Film a dorm tour ×3",
+   "note": ""
+  },
+  "-mvunkncl4vgun": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c48",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793345442356,
+   "label": "Get someone to autograph your forehead",
    "note": ""
   }
  },
