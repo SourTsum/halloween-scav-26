@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341025783
+  "updated": 1793341139749
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -407,6 +407,15 @@
    "qty": 1,
    "ts": 1793341021777,
    "label": "Do a wall sit for an entire song",
+   "note": ""
+  },
+  "-mvul0blnrl2pr": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c8",
+   "points": 50,
+   "qty": 1,
+   "ts": 1793341134778,
+   "label": "Throw up",
    "note": ""
   }
  },
