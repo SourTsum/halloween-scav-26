@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346377616
+  "updated": 1793346412798
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -930,6 +930,15 @@
    "ts": 1793346373605,
    "label": "Bring liquor to the party: per can ×3",
    "note": ""
+  },
+  "-mvuo5d1s6j0yw": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": null,
+   "points": -50,
+   "qty": 1,
+   "ts": 1793346408784,
+   "label": "can",
+   "note": "Custom"
   }
  },
  "bonuses": {}
