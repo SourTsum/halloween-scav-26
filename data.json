@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342005774
+  "updated": 1793342014198
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -488,6 +488,15 @@
    "qty": 1,
    "ts": 1793342001769,
    "label": "Sing a love song to a stranger",
+   "note": ""
+  },
+  "-mvulj32mvnewq": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c39",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793342010189,
+   "label": "Take a photo on the horse in the WPC building",
    "note": ""
   }
  },
