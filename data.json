@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346310394
+  "updated": 1793346361621
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -911,6 +911,15 @@
    "qty": 1,
    "ts": 1793346306378,
    "label": "Find someone wearing the same costume as you",
+   "note": ""
+  },
+  "-mvuo49kax30gd": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c74",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793346357609,
+   "label": "Make a poster and hang it up somewhere",
    "note": ""
   }
  },
