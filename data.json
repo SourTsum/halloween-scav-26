@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793338299400
+  "updated": 1793338311833
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -51,6 +51,15 @@
    "qty": 1,
    "ts": 1793338295396,
    "label": "Film a dorm tour",
+   "note": ""
+  },
+  "-mvujbq840zsl7": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c50",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793338307716,
+   "label": "Get a random person to slow dance with you",
    "note": ""
   }
  },
