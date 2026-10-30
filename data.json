@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340510894
+  "updated": 1793340532100
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -24,10 +24,10 @@
    "color": "#4fe0b5",
    "created": 1793335876018
   },
-  "-mvukmsjg2ywfw": {
+  "-mvuknbhb0w03t": {
    "name": "Fashionably Late",
    "color": "#ff5f8f",
-   "created": 1793340507553
+   "created": 1793340532100
   }
  },
  "awards": {
@@ -317,15 +317,6 @@
    "qty": 1,
    "ts": 1793340106360,
    "label": "Find an object or alcoholic drink starting with the first letter of each group member's name",
-   "note": ""
-  },
-  "-mvukmwo8u2rzs": {
-   "teamId": "-mvukmsjg2ywfw",
-   "cid": "c7",
-   "points": 300,
-   "qty": 1,
-   "ts": 1793340508904,
-   "label": "Have one person drink a bottle of wine on video",
    "note": ""
   }
  },
