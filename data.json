@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344860761
+  "updated": 1793345130760
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -758,6 +758,15 @@
    "qty": 1,
    "ts": 1793344856368,
    "label": "TP the house of someone who's present",
+   "note": ""
+  },
+  "-mvundv68i4dg6": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c34",
+   "points": 300,
+   "qty": 3,
+   "ts": 1793345125904,
+   "label": "Film a dorm tour ×3",
    "note": ""
   }
  },
