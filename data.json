@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793343624761
+  "updated": 1793344105279
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -623,6 +623,33 @@
    "qty": 1,
    "ts": 1793343620133,
    "label": "Split a joint or some form of weed with your team",
+   "note": ""
+  },
+  "-mvumizadu0mrq": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c65",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793343684900,
+   "label": "Go trick-or-treating",
+   "note": ""
+  },
+  "-mvumr01vd6opf": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c61",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793344059138,
+   "label": "Kiss a random stranger",
+   "note": ""
+  },
+  "-mvumrwkas424r": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c27",
+   "points": 16,
+   "qty": 2,
+   "ts": 1793344101273,
+   "label": "Steal a door nameplate ×2",
    "note": ""
   }
  },
