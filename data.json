@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339377621
+  "updated": 1793339383945
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -123,6 +123,15 @@
    "qty": 1,
    "ts": 1793339373613,
    "label": "Make a human pyramid in the Secret Garden",
+   "note": ""
+  },
+  "-mvujypk0in7zp": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c47",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793339379935,
+   "label": "Get publicly rejected while fake-proposing to someone",
    "note": ""
   }
  },
