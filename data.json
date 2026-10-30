@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341321389
+  "updated": 1793341334924
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -425,6 +425,24 @@
    "qty": 1,
    "ts": 1793341317381,
    "label": "Have one person drink a bottle of wine on video",
+   "note": ""
+  },
+  "-mvul4gincbjso": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c56",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793341327774,
+   "label": "Fail at ding-dong ditching by staying until someone answers",
+   "note": ""
+  },
+  "-mvul4ixwgqz9f": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c55",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793341330915,
+   "label": "Cook an egg in a stranger's kitchen",
    "note": ""
   }
  },
