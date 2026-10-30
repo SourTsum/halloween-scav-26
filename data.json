@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340082287
+  "updated": 1793340110367
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -303,6 +303,15 @@
    "qty": 1,
    "ts": 1793340078275,
    "label": "Get someone to come to the party after it's already started",
+   "note": ""
+  },
+  "-mvukea2h08258": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c69",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793340106360,
+   "label": "Find an object or alcoholic drink starting with the first letter of each group member's name",
    "note": ""
   }
  },
