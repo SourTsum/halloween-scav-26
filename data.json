@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339482192
+  "updated": 1793339613749
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -222,6 +222,15 @@
    "qty": 1,
    "ts": 1793339478185,
    "label": "Take a selfie with a random stranger",
+   "note": ""
+  },
+  "-mvuk3mhxo46rj": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c55",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793339609253,
+   "label": "Cook an egg in a stranger's kitchen",
    "note": ""
   }
  },
