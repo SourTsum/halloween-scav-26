@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344266621
+  "updated": 1793344286102
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -668,6 +668,15 @@
    "qty": 1,
    "ts": 1793344262610,
    "label": "Do a wall sit for an entire song",
+   "note": ""
+  },
+  "-mvumvs34x369u": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c23",
+   "points": 80,
+   "qty": 1,
+   "ts": 1793344282095,
+   "label": "Steal a piece of a stranger's costume",
    "note": ""
   }
  },
