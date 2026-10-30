@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339424515
+  "updated": 1793339432762
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -177,6 +177,15 @@
    "qty": 1,
    "ts": 1793339420511,
    "label": "Do a dare given to you by a stranger",
+   "note": ""
+  },
+  "-mvujzr86xm38f": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c23",
+   "points": 80,
+   "qty": 1,
+   "ts": 1793339428757,
+   "label": "Steal a piece of a stranger's costume",
    "note": ""
   }
  },
