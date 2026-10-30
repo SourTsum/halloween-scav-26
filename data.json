@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342815750
+  "updated": 1793343382756
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -587,6 +587,15 @@
    "qty": 1,
    "ts": 1793342811687,
    "label": "Find the baby",
+   "note": ""
+  },
+  "-mvumcezzhwy3u": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c56",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793343378671,
+   "label": "Fail at ding-dong ditching by staying until someone answers",
    "note": ""
   }
  },
