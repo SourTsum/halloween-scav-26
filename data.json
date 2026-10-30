@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340013362
+  "updated": 1793340066022
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -285,6 +285,15 @@
    "qty": 1,
    "ts": 1793340009351,
    "label": "Take a selfie with an El P employee",
+   "note": ""
+  },
+  "-mvukdbuoumtqv": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c12",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793340062015,
+   "label": "Split a joint or some form of weed with your team",
    "note": ""
   }
  },
