@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339745769
+  "updated": 1793339768733
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -249,6 +249,15 @@
    "qty": 1,
    "ts": 1793339741766,
    "label": "Leave your sock at Alex's apartment",
+   "note": ""
+  },
+  "-mvuk6ygkxjtis": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c24",
+   "points": 600,
+   "qty": 1,
+   "ts": 1793339764724,
+   "label": "Steal a traffic sign",
    "note": ""
   }
  },
