@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342014198
+  "updated": 1793342065442
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -497,6 +497,15 @@
    "qty": 1,
    "ts": 1793342010189,
    "label": "Take a photo on the horse in the WPC building",
+   "note": ""
+  },
+  "-mvulk6m7w3bch": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c19",
+   "points": 400,
+   "qty": 1,
+   "ts": 1793342061439,
+   "label": "Go skinny-dipping",
    "note": ""
   }
  },
