@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340896056
+  "updated": 1793340922532
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -371,6 +371,15 @@
    "qty": 1,
    "ts": 1793340892049,
    "label": "Film a dorm tour",
+   "note": ""
+  },
+  "-mvukvoqnqy02i": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c5",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793340918526,
+   "label": "Shotgun a beer on A Mountain",
    "note": ""
   }
  },
