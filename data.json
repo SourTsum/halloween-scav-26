@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345692887
+  "updated": 1793345761762
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -821,6 +821,15 @@
    "qty": 1,
    "ts": 1793345688873,
    "label": "Throw up",
+   "note": ""
+  },
+  "-mvunremqxki9w": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c14",
+   "points": 50,
+   "qty": 1,
+   "ts": 1793345757650,
+   "label": "Drunk-call five people",
    "note": ""
   }
  },
