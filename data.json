@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346131198
+  "updated": 1793346218912
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -884,6 +884,15 @@
    "qty": 1,
    "ts": 1793346127186,
    "label": "Do a shoey",
+   "note": ""
+  },
+  "-mvuo17g5jql1r": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c18",
+   "points": 250,
+   "qty": 1,
+   "ts": 1793346214900,
+   "label": "Jump into the Barrett Fountain",
    "note": ""
   }
  },
