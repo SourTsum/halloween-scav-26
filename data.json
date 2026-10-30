@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342714758
+  "updated": 1793342815750
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -578,6 +578,15 @@
    "qty": 1,
    "ts": 1793342709819,
    "label": "Take a selfie with a random stranger",
+   "note": ""
+  },
+  "-mvum09igoxgl5": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c22",
+   "points": 2000,
+   "qty": 1,
+   "ts": 1793342811687,
+   "label": "Find the baby",
    "note": ""
   }
  },
