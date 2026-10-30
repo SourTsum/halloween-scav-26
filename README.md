@@ -3,6 +3,7 @@
 A scavenger-hunt leaderboard that runs entirely on GitHub Pages.
 
 - **`index.html`**: public leaderboard. Share this link.
+- **`challenges.html`**: the full challenge list for players, with search, sorting, live fire sales, and a team picker that ticks off what that team has done.
 - **`host.html`**: host desk. Add teams, award challenges, undo mistakes, crown the winner.
 
 Scores live in **`data.json`** in this repo. When you award points on the host desk,
@@ -18,6 +19,7 @@ The host desk shows the save state at the top: *changes waiting*, *committing*, 
 ```
 index.html                    public leaderboard
 host.html                     host desk
+challenges.html               challenge list for players
 data.json                     the scores (the host desk commits this)
 css/style.css                 styles
 js/config.js                  settings: backend, title, poll and commit timing
@@ -25,6 +27,7 @@ js/challenges.js              challenge list and points
 js/store.js                   data layer (GitHub, Firebase, or demo)
 js/board.js                   leaderboard page
 js/host.js                    host page
+js/challenges-page.js         challenge list page
 .github/workflows/pages.yml   deploys to Pages on every push
 database.rules.json           only used for the optional Firebase mode
 .nojekyll                     serve files as-is

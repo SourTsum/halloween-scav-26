@@ -17,7 +17,8 @@ function header() {
   const label = state && state.finished ? "Final" : online ? "Live" : "Reconnecting";
   return `<header class="top"><div class="brand"><h1>${esc(HUNT_TITLE)}</h1><span>Leaderboard</span></div>
     <span class="status${cls}"><i></i>${label}</span>
-    ${mode === "github" && state && state.updated ? `<span class="saving">Updated <span data-ts="${state.updated}">${ago(state.updated)}</span></span>` : ""}</header>`;
+    ${mode === "github" && state && state.updated ? `<span class="saving">Updated <span data-ts="${state.updated}">${ago(state.updated)}</span></span>` : ""}
+    <nav class="tabs"><a href="index.html" aria-current="page">Board</a><a href="challenges.html">Challenges</a></nav></header>`;
 }
 
 function render() {
