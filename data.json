@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341848753
+  "updated": 1793342005774
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -479,6 +479,15 @@
    "qty": 1,
    "ts": 1793341844489,
    "label": "Take a selfie with a random stranger",
+   "note": ""
+  },
+  "-mvuliwkp8um9a": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c62",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793342001769,
+   "label": "Sing a love song to a stranger",
    "note": ""
   }
  },
