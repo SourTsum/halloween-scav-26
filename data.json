@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345893750
+  "updated": 1793345930759
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -857,6 +857,15 @@
    "qty": 1,
    "ts": 1793345889665,
    "label": "Play Mario Kart in a random person's dorm",
+   "note": ""
+  },
+  "-mvunv0hnqc2bc": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c70",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793345925946,
+   "label": "Post a TikTok dance",
    "note": ""
   }
  },
