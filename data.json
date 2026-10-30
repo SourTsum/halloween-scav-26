@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793341734190
+  "updated": 1793341848753
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -470,6 +470,15 @@
    "qty": 1,
    "ts": 1793341730180,
    "label": "Do a dare given to you by a stranger",
+   "note": ""
+  },
+  "-mvulfj7ugjquh": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c46",
+   "points": 25,
+   "qty": 1,
+   "ts": 1793341844489,
+   "label": "Take a selfie with a random stranger",
    "note": ""
   }
  },
