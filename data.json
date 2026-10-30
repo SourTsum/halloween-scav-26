@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339613749
+  "updated": 1793339675751
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -231,6 +231,15 @@
    "qty": 1,
    "ts": 1793339609253,
    "label": "Cook an egg in a stranger's kitchen",
+   "note": ""
+  },
+  "-mvuk4y0y637de": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c9",
+   "points": 200,
+   "qty": 4,
+   "ts": 1793339670849,
+   "label": "Bring liquor to the party: per can ×4",
    "note": ""
   }
  },
