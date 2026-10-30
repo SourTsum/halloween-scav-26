@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339404935
+  "updated": 1793339415033
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -159,6 +159,15 @@
    "qty": 1,
    "ts": 1793339400929,
    "label": "Sing a love song to a stranger",
+   "note": ""
+  },
+  "-mvujzdjnnfbmc": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c52",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793339411027,
+   "label": "Take a photo with a police officer",
    "note": ""
   }
  },
