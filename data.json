@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339349569
+  "updated": 1793339356024
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -87,6 +87,15 @@
    "qty": 1,
    "ts": 1793339345564,
    "label": "Jump into the W. P. Carey Fountain",
+   "note": ""
+  },
+  "-mvujy40djljmi": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c18",
+   "points": 250,
+   "qty": 1,
+   "ts": 1793339352012,
+   "label": "Jump into the Barrett Fountain",
    "note": ""
   }
  },
