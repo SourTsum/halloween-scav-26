@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345446363
+  "updated": 1793345459664
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -776,6 +776,15 @@
    "qty": 1,
    "ts": 1793345442356,
    "label": "Get someone to autograph your forehead",
+   "note": ""
+  },
+  "-mvunkxlxfovr9": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c51",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793345455652,
+   "label": "Have a dance battle with strangers",
    "note": ""
   }
  },
