@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344151756
+  "updated": 1793344266621
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -659,6 +659,15 @@
    "qty": 1,
    "ts": 1793344147715,
    "label": "Get someone's Snap, Instagram, or phone number using a cheesy pickup line",
+   "note": ""
+  },
+  "-mvumvd1uyi5b3": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c75",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793344262610,
+   "label": "Do a wall sit for an entire song",
    "note": ""
   }
  },
