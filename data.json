@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339390929
+  "updated": 1793339398127
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -141,6 +141,15 @@
    "qty": 1,
    "ts": 1793339386926,
    "label": "Have a dance battle with strangers",
+   "note": ""
+  },
+  "-mvujz0i3kxdfu": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c54",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793339394123,
+   "label": "Find someone wearing the same costume as you",
    "note": ""
   }
  },
