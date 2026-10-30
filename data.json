@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340654757
+  "updated": 1793340712168
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -335,6 +335,15 @@
    "qty": 1,
    "ts": 1793340650565,
    "label": "Get someone to come to the party after it's already started",
+   "note": ""
+  },
+  "-mvukr6f3ygads": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c3",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793340708158,
+   "label": "Chug a Cutwater",
    "note": ""
   }
  },
