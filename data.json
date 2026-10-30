@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346361621
+  "updated": 1793346377616
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -920,6 +920,15 @@
    "qty": 1,
    "ts": 1793346357609,
    "label": "Make a poster and hang it up somewhere",
+   "note": ""
+  },
+  "-mvuo4lwlpzxg7": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c9",
+   "points": 150,
+   "qty": 3,
+   "ts": 1793346373605,
+   "label": "Bring liquor to the party: per can ×3",
    "note": ""
   }
  },
