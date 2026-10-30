@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339415033
+  "updated": 1793339424515
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -168,6 +168,15 @@
    "qty": 1,
    "ts": 1793339411027,
    "label": "Take a photo with a police officer",
+   "note": ""
+  },
+  "-mvujzkv48g5wf": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c53",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793339420511,
+   "label": "Do a dare given to you by a stranger",
    "note": ""
   }
  },
