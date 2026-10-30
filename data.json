@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346218912
+  "updated": 1793346300675
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -893,6 +893,15 @@
    "qty": 1,
    "ts": 1793346214900,
    "label": "Jump into the Barrett Fountain",
+   "note": ""
+  },
+  "-mvuo2yjguv535": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c47",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793346296668,
+   "label": "Get publicly rejected while fake-proposing to someone",
    "note": ""
   }
  },
