@@ -1,13 +1,18 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793335848058
+  "updated": 1793335868499
  },
  "teams": {
   "-mvuhux8vbg93v": {
    "name": "Stranger Things",
    "color": "#b78cff",
    "created": 1793335848058
+  },
+  "-mvuhvd0pqfq4f": {
+   "name": "Land Acknowledgment",
+   "color": "#ff7a2f",
+   "created": 1793335868499
   }
  },
  "awards": {},
