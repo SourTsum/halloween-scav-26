@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340066022
+  "updated": 1793340082287
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -294,6 +294,15 @@
    "qty": 1,
    "ts": 1793340062015,
    "label": "Split a joint or some form of weed with your team",
+   "note": ""
+  },
+  "-mvukdoec3ld9o": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c67",
+   "points": 250,
+   "qty": 1,
+   "ts": 1793340078275,
+   "label": "Get someone to come to the party after it's already started",
    "note": ""
   }
  },
