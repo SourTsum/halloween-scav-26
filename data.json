@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340755985
+  "updated": 1793340822532
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -353,6 +353,15 @@
    "qty": 1,
    "ts": 1793340751976,
    "label": "Sing a love song to a stranger",
+   "note": ""
+  },
+  "-mvuktjkqsc0rn": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c1",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793340818521,
+   "label": "Pour a beer down your pants",
    "note": ""
   }
  },
