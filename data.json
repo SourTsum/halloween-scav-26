@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793342627751
+  "updated": 1793342706183
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -560,6 +560,15 @@
    "qty": 1,
    "ts": 1793342623395,
    "label": "Get someone to autograph your forehead",
+   "note": ""
+  },
+  "-mvulxx0ivxnre": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c68",
+   "points": 50,
+   "qty": 1,
+   "ts": 1793342702178,
+   "label": "Sing karaoke",
    "note": ""
   }
  },
