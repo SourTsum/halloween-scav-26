@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793346525144
+  "updated": 1793346543647
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -992,6 +992,15 @@
    "qty": 1,
    "ts": 1793346521128,
    "label": "Get someone's Snap, Instagram, or phone number using a cheesy pickup line",
+   "note": ""
+  },
+  "-mvuo85j1odsfn": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c65",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793346539004,
+   "label": "Go trick-or-treating",
    "note": ""
   }
  },
