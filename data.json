@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344342814
+  "updated": 1793344480186
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -686,6 +686,15 @@
    "qty": 1,
    "ts": 1793344338513,
    "label": "Fail at ding-dong ditching by staying until someone answers",
+   "note": ""
+  },
+  "-mvumzxu7ssr9r": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c55",
+   "points": 200,
+   "qty": 1,
+   "ts": 1793344476175,
+   "label": "Cook an egg in a stranger's kitchen",
    "note": ""
   }
  },
