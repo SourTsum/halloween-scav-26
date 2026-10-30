@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793344480186
+  "updated": 1793344491828
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -695,6 +695,15 @@
    "qty": 1,
    "ts": 1793344476175,
    "label": "Cook an egg in a stranger's kitchen",
+   "note": ""
+  },
+  "-mvun0692mq8d5": {
+   "teamId": "-mvuknbhb0w03t",
+   "cid": "c6",
+   "points": 300,
+   "qty": 1,
+   "ts": 1793344487076,
+   "label": "Run a beer mile (2.5 laps around the SDFC field)",
    "note": ""
   }
  },
