@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340712168
+  "updated": 1793340755985
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -344,6 +344,15 @@
    "qty": 1,
    "ts": 1793340708158,
    "label": "Chug a Cutwater",
+   "note": ""
+  },
+  "-mvuks488mfauh": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c62",
+   "points": 150,
+   "qty": 1,
+   "ts": 1793340751976,
+   "label": "Sing a love song to a stranger",
    "note": ""
   }
  },
