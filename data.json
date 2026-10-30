@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793340922532
+  "updated": 1793340930585
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -380,6 +380,15 @@
    "qty": 1,
    "ts": 1793340918526,
    "label": "Shotgun a beer on A Mountain",
+   "note": ""
+  },
+  "-mvukvuybuc8nk": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c50",
+   "points": 100,
+   "qty": 1,
+   "ts": 1793340926578,
+   "label": "Get a random person to slow dance with you",
    "note": ""
   }
  },
