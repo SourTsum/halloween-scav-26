@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339675751
+  "updated": 1793339745769
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -240,6 +240,15 @@
    "qty": 4,
    "ts": 1793339670849,
    "label": "Bring liquor to the party: per can ×4",
+   "note": ""
+  },
+  "-mvuk6gqu2nkrh": {
+   "teamId": "-mvuhvgsfjj4ro",
+   "cid": "c76",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793339741766,
+   "label": "Leave your sock at Alex's apartment",
    "note": ""
   }
  },
