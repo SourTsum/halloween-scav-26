@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793345797799
+  "updated": 1793345883762
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -839,6 +839,15 @@
    "qty": 1,
    "ts": 1793345792777,
    "label": "Have one person drink a bottle of wine on video",
+   "note": ""
+  },
+  "-mvunu08ygfwkl": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c48",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793345878978,
+   "label": "Get someone to autograph your forehead",
    "note": ""
   }
  },
