@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793335876018
+  "updated": 1793336529895
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -25,6 +25,16 @@
    "created": 1793335876018
   }
  },
- "awards": {},
+ "awards": {
+  "-mvui9jczecf73": {
+   "teamId": "-mvuhux8vbg93v",
+   "cid": "c24",
+   "points": 600,
+   "qty": 1,
+   "ts": 1793336525890,
+   "label": "Steal a traffic sign",
+   "note": ""
+  }
+ },
  "bonuses": {}
 }
