@@ -1,7 +1,7 @@
 {
  "meta": {
   "finished": false,
-  "updated": 1793339432762
+  "updated": 1793339441980
  },
  "teams": {
   "-mvuhux8vbg93v": {
@@ -186,6 +186,15 @@
    "qty": 1,
    "ts": 1793339428757,
    "label": "Steal a piece of a stranger's costume",
+   "note": ""
+  },
+  "-mvujzyc7vav15": {
+   "teamId": "-mvuhvd0pqfq4f",
+   "cid": "c37",
+   "points": 75,
+   "qty": 1,
+   "ts": 1793339437974,
+   "label": "Take a selfie with an El P employee",
    "note": ""
   }
  },
